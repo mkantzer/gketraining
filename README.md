@@ -1,3 +1,16 @@
+
+# Fork Note
+This fork is generated so that Mike Kantzer can do a deep dive into GKE deployment and app development, using the base training microservice architecture. 
+
+Goals:
+
+ * Deploy GKE cluster, a datastore, and any other needed components via terraform
+ * Helm (3.0 if possible) for deploying application
+ * Application development via `skaffold dev`, negating the need for a local k8s env
+ * Adjustments to nest2; instead of getting a single response from an env variable, grab a list of possible responses from a file stored in GCP, and then pick a random one. this will also require gcp auth somehow within the container. 
+
+
+
 <!-- Add project logo here -->
 <p align="center"><img height="200" src="https://fearless.tech/static/brand/logo_lockup.png"></p>
 
